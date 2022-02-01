@@ -1,4 +1,4 @@
-#Python implementation of Computation Of  π
+# Python implementation of Computation Of  π
 
 This Python Script (not effitient at all!!) computes what the above title says
 
