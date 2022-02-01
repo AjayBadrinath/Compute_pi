@@ -17,6 +17,7 @@ int main(void) {
   ptr=&points;
   srand((unsigned long long int )ptr);                          //Seeding a random memory location seemed more fitting than seeding the current time as u_int32 
   LARGE_NUM points_in_circle=0;
+  printf("Enter the number of sample points 100000<x<10000000\n");
   scanf("%Ld",&points);
   for (int i=0;i<points;i++){
     float x_coor=(((float)rand()/RAND_MAX));                    //RAND_MAX defined as macro in <stdlib.h> any random number / RAND_MAX <1
@@ -24,6 +25,6 @@ int main(void) {
     if(sqrt((double)pow((double)x_coor,2)+(double)pow((double)y_coor,2))<=1){points_in_circle++;}//Check if point is in unit circle
     else{continue;}
   }
-  printf("%lf",points_in_circle*4/(double)points);
+  printf("Value of  π approx : %lf\n",points_in_circle*4/(double)points);
   return 0;
 }
